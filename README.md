@@ -8,3 +8,10 @@ git commit -sm "Primeiro Commit"
 git remote add origin https://github.com/cnovack/learningnode.git
 git push origin master
 ```
+
+## New commits
+```sh
+git add .
+git commit -sm "New message"
+git push origin master
+```
