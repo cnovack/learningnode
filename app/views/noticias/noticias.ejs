@@ -7,7 +7,22 @@
 	<body>
 
 		<h1>Notícias</h1>
-		<p>Boa noite</p>
+		
+		<table>
+			<tr>
+				<td>ID</td>
+				<td>Título</td>
+				<td>Notícia</td>
+			</tr>
+
+			<% for(var i=0; i < noticias.length; i++) { %>
+				<tr>
+					<td>1</td>
+					<td>Título da Notícia</td>
+					<td>Conteúdo</td>
+				</tr>
+			<% } %>
+		</table>
 
 	</body>
 </html>
