@@ -11,12 +11,5 @@ module.exports = function(application) {
 		    res.render("noticias/noticias", {noticias : result});
 		});
 
-    var connection = mysql.createConnection({
-      host: process.env.MYSQL_SERVER,
-      user: process.env.MYSQL_USER,
-      password: process.env.MYSQL_PASSWORD,
-      database: process.env.MYSQL_DATABASE
-    });
-
 	});
 };
