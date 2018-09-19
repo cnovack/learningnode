@@ -6,7 +6,7 @@ module.exports = function(application){
 	application.post('/noticias/salvar', function(req, res){
 		var noticia = req.body;
 
-		var connection = application.config.database();
+		var connection = application.config.database;
 		var noticiasModel = application.app.models.noticiasModel;
 
 		noticiasModel.salvarNoticia(noticia, connection, function(error, result){

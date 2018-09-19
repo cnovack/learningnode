@@ -5,13 +5,6 @@ var bodyParser = require('body-parser');
 const dotenv = require('dotenv')
 const result = dotenv.config()
 
-if (result.error) {
-  throw result.error
-}
-
-console.log(result.parsed)
-console.log(process.env)
-
 var app = express();
 app.set('view engine', 'ejs');
 app.set('views', './app/views');
