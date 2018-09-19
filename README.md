@@ -18,7 +18,7 @@ git push origin master
 
 ## MySQL Database connection
 A conexão com a base de dados é estabelecida no seguinte código:
-```
+```js
     var connection = mysql.createConnection({
       host : process.env.MYSQL_SERVER,
       user : process.env.MYSQL_USER,
@@ -28,9 +28,13 @@ A conexão com a base de dados é estabelecida no seguinte código:
 ```
 
 Antes de iniciar o server, deve exportar environment variables do sistema operacional
+- Criar o arquivo .env copiando do exemplo
+```sh
+cp .env.sample .env
 ```
-export MYSQL_SERVER=server
-export MYSQL_USER=user
-export MYSQL_PASSWORD=password
-export MYSQL_DATABASE=database
+- Completar os valores dos dados da conexão com o database
+
+# Iniciar server
+```sh
+npm start
 ```
