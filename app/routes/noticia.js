@@ -2,7 +2,7 @@ module.exports = function(app) {
 
 	app.get('/noticia', function(req, res){
 
-		var connection = app.config.dbConnection();
+		var connection = app.config.database();
 		var noticiasModel = app.app.models.noticiasModel
 
 

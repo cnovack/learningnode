@@ -4,6 +4,7 @@
   "description": "Site de Notícias",
   "main": "noticias.js",
   "scripts": {
+    "start": "nodemon --exec 'node -r dotenv/config' app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Carlos Novack",
@@ -11,6 +12,7 @@
   "dependencies": {
     "body-parser": "^1.18.3",
     "consign": "^0.1.6",
+    "dotenv": "^6.0.0",
     "ejs": "^2.6.1",
     "express": "^4.16.3",
     "mysql": "^2.16.0"
