@@ -11,6 +11,7 @@ git push origin master
 
 ## New commits
 ```sh
+git status
 git add .
 git commit -sm "New message"
 git push origin master
@@ -37,4 +38,21 @@ cp .env.sample .env
 # Iniciar server
 ```sh
 npm start
+```
+## Outros comandos do Git para fazer Commits
+```sh
+Criar um Branch: git checkout -b nomedabranch
+Ver branchs existentes: git branch
+Mudar branch: git checkout nomedabranch
+Excluir branch: git branch -D nomedabranch
+Clonar diretório do git: git clone (endereço do repositório)
+```
+
+Para remover arquivo do git em espera:
+git rm --cached  nomedoarquivo
+
+## Direfença entre Push, Fetch e Pull - Importantíssimo
+```sh
+Pull e Fetch - Serve para recuperar os arquivos do git que estão no github
+Push - Envia todos os arquivos que estão no computador para o github
 ```
