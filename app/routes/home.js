@@ -1,9 +1,9 @@
 const home = require('../controllers/home');
 
-module.exports = function(app) {
+module.exports = function(application) {
 
-	app.get('/', function(req, res){
-    home.index(app, req, res);
+	application.get('/', function(req, res){
+    	application.app.controllers.home.index(application, req, res);
 	});
 
 }
